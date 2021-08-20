@@ -30,8 +30,8 @@ def get_api():
     return jsonify(data)
 
 @app.route('/name')
-def name ():
-     return "กานต์ชนิต แก้วศรีงาม <br> เลขที่ 6 ม.4/10"
+def name :
+     return "กานต์ชนิต แก้วศรีงาม <br>เลขที่ 6 ม.4/10"
 
 if __name__ == "__main__":
     app.run(debug=False)
