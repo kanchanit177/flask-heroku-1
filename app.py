@@ -30,7 +30,7 @@ def get_api():
     return jsonify(data)
 
 @app.route('/name')
-def name :
+def name ():
      return "<font color=red>กานต์ชนิ แก้วศรีงาม </font> <br>เลขที่ 6 ม.4/10"
 
 if __name__ == "__main__":
