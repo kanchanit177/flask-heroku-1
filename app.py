@@ -2,7 +2,7 @@ from flask import Flask, jsonify
 from flask import Flask, render_template, Response
 import cv2
 
-camera = cv2.VideoCapture('rtsp://freja.hiof.no:1935/rtplive/_definst_/hessdalen03.stream')  # use 0 for web camera
+camera = cv2.VideoCapture('rtsp://freja.hiof.no:1935/rtplive/_definst_/hessdalen03.stream')
 
 app = Flask(__name__)
 
@@ -46,8 +46,8 @@ def get_api():
     return jsonify(data)
 
 @app.route('/name')
-def name ():
-     return "<font color=pink>กานต์ชนิต แก้วศรีงาม </font> <br>เลขที่ 6 ม.4/10
+def name():
+    return "<font color=watermelon>กานต์ชนิต แก้วศรีงาม</font> <br> <font color=lilac>เลขที่ 6 ชั้น ม.4/10</font>" 
 
 @app.route('/hello/<string:name>')
 def Home(name):
